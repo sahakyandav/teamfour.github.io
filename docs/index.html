@@ -1,0 +1,486 @@
+<html>
+
+<head>
+  <title>FinalProjectNoCode</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="applab/fontawesome-webfont.woff2" as="font">
+  <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script>
+    function setExportConfig(config) {
+      window.EXPORT_OPTIONS = config;
+    }
+  </script>
+  <script
+    src="https://studio.code.org/projects/applab/MTjF6uJa1Uj-BH_YpRsTpJLVlgErT_TC01j31gVdd1w/export_config?script_call=setExportConfig"></script>
+  <script src="applab/applab-api.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+  <link rel="stylesheet" href="applab/applab.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="divApplab" class="appModern running" tabindex="1" style="width: 320px; height: 450px; display: block;">
+    <div class="screen" tabindex="1" data-theme="default" id="startScreen"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: block;">
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(37, 59, 89); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; padding: 2px 15px; width: 320px; height: 110px; position: absolute; left: 1px; top: 233px; text-align: center; font-size: 20px;"
+        id="inviteLabel">To start with, we’d like you to take this quiz. You can skip any question.</label>
+      <button id="buttonS"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 23px; position: absolute; left: 60px; top: 357px; width: 200px;">Start</button>
+      <img src="assets/Hogwarts.png" data-canonical-image-url="assets/Hogwarts.png" data-image-type="file"
+        data-object-fit="contain" id="headImage"
+        style="height: 205px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 0px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="buttonInfo"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 25px; width: 30px; background-color: rgb(255, 38, 0); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 283px; top: 415px;">?</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen2"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;"
+      data-mod-backgroundcolor="1">
+      <img src="assets/Classroom-rafiki.png" data-canonical-image-url="Classroom-rafiki-(1).png" data-image-type="file"
+        data-object-fit="contain" id="image2"
+        style="height: 170px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 20px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="button2"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 0px; top: 185px; height: 40px;"
+        id="label2" data-mod-textcolor="1" data-mod-fontsize="1">Who would be your favourite teacher at
+        Hogwarts?</label>
+      <select id="dropdown2"
+        style="width: 200px; height: 30px; margin: 0px; border-style: solid; background-color: rgb(249, 221, 84); color: rgb(25, 58, 85); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23193a55%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 15px; padding: 0px 30px 0px 15px; position: absolute; left: 15px; top: 250px;"
+        data-mod-padding="1">
+        <option>Minerva McGonagall</option>
+        <option>Severus Snape</option>
+        <option>Horace Slughorn</option>
+        <option>Rubeus Hagrid</option>
+      </select>
+      <button id="button21"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen1"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <img src="assets/Powerful-rafiki.png" data-canonical-image-url="assets/Powerful-rafiki.png" data-image-type="file"
+        data-object-fit="contain" id="image1"
+        style="height: 215px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 5px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="button1"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 0px; top: 205px; height: 60px;"
+        id="label1" data-mod-textcolor="1" data-mod-fontsize="1">Mark your main strength for us to choose the best
+        Hogwarts House for you:</label>
+      <select id="dropdown1"
+        style="width: 200px; height: 30px; margin: 0px; border-style: solid; background-color: rgb(249, 221, 84); color: rgb(25, 58, 85); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23193a55%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 15px; padding: 0px 30px 0px 15px; position: absolute; left: 10px; top: 290px;"
+        data-mod-padding="1">
+        <option>sociability</option>
+        <option>competitiveness</option>
+        <option>courage</option>
+        <option>intelligence</option>
+      </select>
+      <button id="button11"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen3"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <img src="assets/Friendship-amico.png" data-canonical-image-url="assets/Friendship-amico.png"
+        data-image-type="file" data-object-fit="contain" id="image3"
+        style="height: 170px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 20px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="button3"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 0px; top: 205px; height: 40px;"
+        id="label3" data-mod-textcolor="1" data-mod-fontsize="1">Who would you rather choose to be your best
+        friend?</label>
+      <select id="dropdown3"
+        style="width: 200px; height: 30px; margin: 0px; border-style: solid; background-color: rgb(249, 221, 84); color: rgb(25, 58, 85); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23193a55%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 15px; padding: 0px 30px 0px 15px; position: absolute; left: 15px; top: 270px;"
+        data-mod-padding="1">
+        <option>Neville Longbottom</option>
+        <option>Draco Malfoy</option>
+        <option>Ginnie Wesley</option>
+        <option>Cedric Diggory</option>
+      </select>
+      <button id="button31"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen4"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <img src="assets/About-me-pana.png" data-canonical-image-url="assets/About-me-pana.png" data-image-type="file"
+        data-object-fit="contain" id="image4"
+        style="height: 220px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 10px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="button4"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 0px; top: 215px; height: 25px;"
+        id="label4" data-mod-textcolor="1" data-mod-fontsize="1">What is your main hobby?</label>
+      <select id="dropdown4"
+        style="width: 200px; height: 30px; margin: 0px; border-style: solid; background-color: rgb(249, 221, 84); color: rgb(25, 58, 85); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23193a55%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 15px; padding: 0px 30px 0px 15px; position: absolute; left: 15px; top: 265px;"
+        data-mod-padding="1">
+        <option>sport</option>
+        <option>science</option>
+        <option>art</option>
+        <option>other</option>
+      </select>
+      <button id="button41"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen5"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <img src="assets/Children-preparing-their-backpack-bro.png"
+        data-canonical-image-url="assets/Children-preparing-their-backpack-bro.png" data-image-type="file"
+        data-object-fit="contain" id="image5"
+        style="height: 195px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 15px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="button5"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 0px; top: 215px; height: 25px;"
+        id="label5" data-mod-textcolor="1" data-mod-fontsize="1">Do you have siblings?</label>
+      <select id="dropdown5"
+        style="width: 200px; height: 30px; margin: 0px; border-style: solid; background-color: rgb(249, 221, 84); color: rgb(25, 58, 85); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23193a55%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 15px; padding: 0px 30px 0px 15px; position: absolute; left: 15px; top: 265px;"
+        data-mod-padding="1">
+        <option>yes</option>
+        <option>no</option>
+      </select>
+      <button id="button51"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen6"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <img src="assets/A-day-at-the-park-rafiki.png" data-canonical-image-url="assets/A-day-at-the-park-rafiki.png"
+        data-image-type="file" data-object-fit="contain" id="image6"
+        style="height: 195px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 20px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="button6"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 0px; top: 195px; height: 40px;"
+        id="label6" data-mod-textcolor="1" data-mod-fontsize="1">Where do you usually spend your spare time after
+        school?</label>
+      <select id="dropdown6"
+        style="width: 200px; height: 30px; margin: 0px; border-style: solid; background-color: rgb(249, 221, 84); color: rgb(25, 58, 85); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23193a55%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 15px; padding: 0px 30px 0px 15px; position: absolute; left: 15px; top: 255px;"
+        data-mod-padding="1">
+        <option>at home</option>
+        <option>in the cafe</option>
+        <option>in the park</option>
+        <option>in the shopping mall</option>
+      </select>
+      <button id="button61"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen7"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <img src="assets/Flying-phoenix-rafiki.png" data-canonical-image-url="assets/Flying-phoenix-rafiki.png"
+        data-image-type="file" data-object-fit="contain" id="image7"
+        style="height: 185px; width: 315px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 15px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="button7"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 0px; top: 190px; height: 75px;"
+        id="label7" data-mod-textcolor="1" data-mod-fontsize="1">Next, coin the name for your patronus by entering your
+        father’s second name and your mother’s maiden name:</label>
+      <button id="button71"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+      <input id="text_input7"
+        style="margin: 0px; width: 200px; height: 30px; border-style: solid; color: rgb(4, 0, 0); background-color: rgba(255, 255, 255, 0.38); border-color: rgba(255, 255, 255, 0); border-radius: 5px; border-width: 1px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; padding: 5px 15px; position: absolute; left: 15px; top: 290px;">
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen8"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <img src="assets/Vault-amico.png" data-canonical-image-url="assets/Vault-amico.png" data-image-type="file"
+        data-object-fit="contain" id="image8"
+        style="height: 175px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 25px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="button8"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 0px; top: 195px; height: 75px;"
+        id="label8" data-mod-textcolor="1" data-mod-fontsize="1">What would you be most likely to use as a password to
+        your credit card at Gringotts Wizarding Bank?</label>
+      <select id="dropdown8"
+        style="width: 200px; height: 30px; margin: 0px; border-style: solid; background-color: rgb(249, 221, 84); color: rgb(25, 58, 85); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23193a55%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 15px; padding: 0px 30px 0px 15px; position: absolute; left: 15px; top: 295px;"
+        data-mod-padding="1">
+        <option>my pet’s name</option>
+        <option>my best friend’s date of birth</option>
+        <option>my first teacher’s favourite flower</option>
+        <option>symbols without context</option>
+      </select>
+      <button id="button81"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen9"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <button id="button9"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 295px; position: absolute; left: 0px; top: 200px; height: 95px;"
+        id="label9" data-mod-textcolor="1" data-mod-fontsize="1">To determine the social class you would belong to in
+        the magical world, choose the amount of money (in US dollars) you possess on your real credit
+        card:</label>
+      <select id="dropdown9"
+        style="width: 200px; height: 30px; margin: 0px; border-style: solid; background-color: rgb(249, 221, 84); color: rgb(25, 58, 85); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23193a55%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 15px; padding: 0px 30px 0px 15px; position: absolute; left: 10px; top: 320px;"
+        data-mod-padding="1">
+        <option>0 - 1 000</option>
+        <option>1 000 - 10 000</option>
+        <option>10 000 - 100 000</option>
+        <option>100 000+</option>
+      </select>
+      <button id="button91"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+      <img src="assets/Savings-cuate.png" data-canonical-image-url="assets/Savings-cuate.png" data-image-type="file"
+        data-object-fit="contain" id="image9"
+        style="height: 185px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 20px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screen10"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <button id="button10"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 4.44089e-16px; top: 210px; height: 75px;"
+        id="label10" data-mod-textcolor="1" data-mod-fontsize="1">Enter the number of your current credit card and it’s
+        expiration date to register it at &nbsp;Gringotts:</label>
+      <button id="button101"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+      <input id="text_input10"
+        style="margin: 0px; width: 200px; height: 30px; border-style: solid; color: rgb(4, 0, 0); background-color: rgba(255, 255, 255, 0.38); border-color: rgba(255, 255, 255, 0); border-radius: 5px; border-width: 1px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; padding: 5px 15px; position: absolute; left: 15px; top: 305px;">
+      <input id="text_input101"
+        style="margin: 0px; width: 200px; height: 30px; border-style: solid; color: rgb(4, 0, 0); background-color: rgba(255, 255, 255, 0.38); border-color: rgba(255, 255, 255, 0); border-radius: 5px; border-width: 1px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; padding: 5px 15px; position: absolute; left: 15px; top: 345px;">
+      <img src="assets/Plain-credit-card-pana.png" data-canonical-image-url="assets/Plain-credit-card-pana.png"
+        data-image-type="file" data-object-fit="contain" id="image10"
+        style="height: 190px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 25px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screenInsta"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <button id="buttonInsta" onclick="instagramSearch(document.getElementById('text_inputInsta').value)"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 285px; position: absolute; left: 10px; top: 218px; height: 60px;"
+        id="labelInsta" data-mod-textcolor="1" data-mod-fontsize="1">Enter you &nbsp;username on Instagram, so you can
+        share your results later:</label>
+      <button id="buttonInsta1"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+      <img src="assets/Instagram-Video-Streaming-pana.png"
+        data-canonical-image-url="assets/Instagram-Video-Streaming-pana.png" data-image-type="file"
+        data-object-fit="contain" id="image12"
+        style="border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 10px; top: 35px; margin: 0px; width: 300px; height: 160px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <input id="text_inputInsta"
+        style="margin: 0px; width: 200px; height: 30px; border-style: solid; color: rgb(4, 0, 0); background-color: rgba(255, 255, 255, 0.38); border-color: rgb(255, 255, 255); border-radius: 5px; border-width: 1px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; padding: 5px 15px; position: absolute; left: 23px; top: 288px;"
+        data-mod-textcolor="1" data-mod-backgroundcolor="1">
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screenConditional1"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <button id="button14"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px;line-height: 1;overflow: hidden;overflow-wrap: break-word;max-width: 320px;border-style: solid;text-rendering: optimizespeed;color: rgb(30, 54, 92);background-color: rgba(165, 61, 63, 0);border-color: rgb(255, 255, 255);border-radius: 10px;border-width: 0px;font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif;font-size: 18px;padding: 2px 15px;width: 285px;position: absolute;left: 16px;top: 262px;height: 50px;"
+        id="label12" data-mod-textcolor="1" data-mod-fontsize="1">How would Dumbledore caption this
+        picture?</label>
+      <button id="button15"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+      <input id="text_input3"
+        style="margin: 0px;width: 200px;height: 30px;border-style: solid;color: rgb(4, 0, 0);background-color: rgba(255, 255, 255, 0.38);border-color: rgba(255, 255, 255, 0);border-radius: 5px;border-width: 1px;font-family: Tahoma, Geneva, sans-serif;font-size: 13px;padding: 5px 15px;position: absolute;left: 28px;top: 308px;">
+      <img src="" data-image-type="file" data-object-fit="contain" id="image14"
+        style="height: 215px;width: 320px;border-style: solid;border-width: 0px;border-color: rgb(0, 0, 0);border-radius: 0px;position: absolute;left: 0px;top: 39px;margin: 0px;object-fit: contain;font-family: &quot;object-fit: contain;&quot;;">
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screenConditional2"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <button id="button16"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(30, 54, 92); background-color: rgba(165, 61, 63, 0); border-color: rgb(255, 255, 255); border-radius: 10px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; width: 290px; position: absolute; left: 10px; top: 219px; height: 60px;"
+        id="label13" data-mod-textcolor="1" data-mod-fontsize="1">Which one of your X &nbsp;followers reminds you most
+        of
+        Hermione?</label>
+      <button id="button17"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+      <input id="text_input4"
+        style="margin: 0px; width: 200px; height: 30px; border-style: solid; color: rgb(4, 0, 0); background-color: rgba(255, 255, 255, 0.38); border-color: rgba(255, 255, 255, 0); border-radius: 5px; border-width: 1px; font-family: Tahoma, Geneva, sans-serif; font-size: 13px; padding: 5px 15px; position: absolute; left: 22px; top: 277px;">
+      <img src="assets/Following-rafiki.png" data-canonical-image-url="assets/Following-rafiki.png"
+        data-image-type="file" data-object-fit="contain" id="image15"
+        style="border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 25px; top: 20px; margin: 0px; width: 270px; height: 190px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+    </div>
+    <div class="screen" tabindex="1" data-theme="ketchupAndMustard" id="screenConditional3"
+      style="height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0); display: none;">
+      <button id="button18"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1">Continue</button>
+      <label
+        style="margin: 0px;line-height: 1;overflow: hidden;overflow-wrap: break-word;max-width: 320px;border-style: solid;text-rendering: optimizespeed;color: rgb(30, 54, 92);background-color: rgba(165, 61, 63, 0);border-color: rgb(255, 255, 255);border-radius: 10px;border-width: 0px;font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif;font-size: 18px;padding: 2px 15px;width: 255px;position: absolute;left: 16px;top: 269px;height: 60px;"
+        id="label14" data-mod-textcolor="1" data-mod-fontsize="1">What would your housemates comment under this post
+        from 30 Apr 2020?</label>
+      <button id="button19"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(25, 58, 85); border-color: rgb(25, 58, 85); border-radius: 5px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">exit</button>
+      <input id="text_input5"
+        style="margin: 0px;width: 200px;height: 30px;border-style: solid;color: rgb(4, 0, 0);background-color: rgba(255, 255, 255, 0.38);border-color: rgba(255, 255, 255, 0);border-radius: 5px;border-width: 1px;font-family: Tahoma, Geneva, sans-serif;font-size: 13px;padding: 5px 15px;position: absolute;left: 29px;top: 332px;">
+        <img src="" data-image-type="file" data-object-fit="contain" id="image16"
+          style="height: 215px;width: 320px;border-style: solid;border-width: 0px;border-color: rgb(0, 0, 0);border-radius: 0px;position: absolute;left: 0px;top: 40px;margin: 0px;object-fit: contain;font-family: &quot;object-fit: contain;&quot;;">
+    </div>
+    <div class="screen" tabindex="1" data-theme="default" id="screenExplanation1"
+      style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0);">
+      <button id="buttonE11"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(14, 0, 0); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">Home</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 18px; padding: 2px 15px; position: absolute; left: 40px; top: 33px; text-align: center; height: 75px; width: 235px;"
+        id="label11">To be honest, we have no idea who you are in the Harry Potter cinematic universe.</label>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; padding: 2px 15px; width: 245px; position: absolute; left: 35px; top: 281px; text-align: justify; height: 100px;"
+        id="label16"></label>
+      <button id="buttonE1"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1" data-mod-textcolor="1" data-mod-fontfamily="1"
+        data-mod-fontsize="1">Continue</button>
+      <img src="assets/Questions-bro-(1).png" data-canonical-image-url="Questions-bro-(1).png" data-image-type="file"
+        data-object-fit="contain" id="image11"
+        style="height: 160px; width: 170px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 70px; top: 108px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+    </div>
+    <div class="screen" tabindex="1" data-theme="default" id="screenExplanation2"
+      style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0);">
+      <button id="buttonE21"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(14, 0, 0); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">Home</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 20px; padding: 2px 15px; position: absolute; left: 45px; top: 29px; text-align: center; height: 50px; width: 230px;"
+        id="label20">Treat your personal data like your wallet!</label>
+      <button id="buttonE2"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1" data-mod-textcolor="1" data-mod-fontfamily="1"
+        data-mod-fontsize="1">Continue</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; padding: 2px 15px; width: 195px; height: 160px; position: absolute; left: 0px; top: 100px; text-align: justify;"
+        id="label22">In fact, your personal data is as valuable as your credit card details. To show you this
+        similarity,&nbsp;the questions in the quiz escalated from innocent to excessively invasive.</label>
+      <img src="assets/Wallet-amico.png" data-canonical-image-url="assets/Wallet-amico.png" data-image-type="file"
+        data-object-fit="contain" id="image13"
+        style="height: 135px; width: 130px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 186px; top: 100px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; padding: 2px 15px; width: 315px; height: 100px; position: absolute; left: -1px; top: 255px; text-align: justify;"
+        id="label23">Starting from Question 6 (the one about siblings), we started to request your personal data. So, if
+        you gave an honest answer to any of the questions to follow, you have revealed something about yourself.
+      </label>
+    </div>
+    <div class="screen" tabindex="1" data-theme="default" id="screenExplanation3"
+      style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0);">
+      <button id="buttonE31"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(14, 0, 0); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">Home</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 20px; padding: 2px 15px; position: absolute; left: 45px; top: 31px; text-align: center; height: 50px; width: 230px;"
+        id="label24">Compare the quiz with real life:</label>
+      <button id="buttonE3"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 14px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1" data-mod-textcolor="1" data-mod-fontfamily="1" data-mod-fontsize="1">Find how you
+        can protect your data!</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; padding: 2px 15px; width: 170px; height: 140px; position: absolute; left: 150px; top: 112px; text-align: justify;"
+        id="label25">Social media and personality tests make you be willing to share information about yourself, then
+        make conclusions out of it and use it for further purposes.</label>
+      <img src="assets/Security-amico.png" data-canonical-image-url="assets/Security-amico.png" data-image-type="file"
+        data-object-fit="contain" id="image17"
+        style="height: 165px; width: 155px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 86px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; padding: 2px 15px; width: 315px; height: 110px; position: absolute; left: 3px; top: 267px; text-align: justify;"
+        id="label27">So, if a bunch of young stalkers could find certian &nbsp;information about you, imagine what more
+        experienced people are able to do: identify &nbsp;your location, form your psychological portrait, track your
+        preferences and much more.</label>
+    </div>
+    <div class="screen" tabindex="1" data-theme="default" id="screenExplanation2B"
+      style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0);">
+      <button id="button25"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(14, 0, 0); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">Home</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 20px; padding: 2px 15px; position: absolute; left: 45px; top: 29px; text-align: center; height: 50px; width: 230px;"
+        id="label29">Treat your personal data like your wallet!</label>
+      <button id="button26"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 20px; position: absolute; left: 55px; top: 395px; width: 200px;"
+        data-mod-backgroundcolor="1" data-mod-textcolor="1" data-mod-fontfamily="1"
+        data-mod-fontsize="1">Continue</button>
+      <img src="assets/Social-tree-pana.png" data-canonical-image-url="assets/Social-tree-pana.png"
+        data-image-type="file" data-object-fit="contain" id="image18"
+        style="height: 185px; width: 180px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 70px; top: 66px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; padding: 2px 15px; width: 305px; height: 90px; position: absolute; left: 6px; top: 246px; text-align: justify;"
+        id="label31">Similarly, you readily shared the information about you on social media, which is easily accessible
+        for everybody in the world, including marketers, state security, criminals and us. :)</label>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; padding: 2px 15px; width: 310px; height: 57px; position: absolute; left: 5px; top: 326px;"
+        id="label39">By adding personalised questions we ment to raise your suspicion about how we are using your data
+        and what is happening behind your back.</label>
+    </div>
+    <div class="screen" tabindex="1" data-theme="default" id="screenLinks"
+      style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0);">
+      <button id="buttonL4"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 20px; width: 50px; background-color: rgb(233, 72, 43); color: rgb(14, 0, 0); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 13px; position: absolute; left: 260px; top: 10px;"
+        data-mod-backgroundcolor="1">Home</button>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(77, 87, 95); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; font-size: 20px; padding: 2px 15px; position: absolute; left: 45px; top: 35px; text-align: center; height: 50px; width: 230px;"
+        id="label33">Here are some useful links:</label>
+      <button id="buttonL1" href
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 18px; position: absolute; left: 55px; top: 256px; width: 200px;"
+        data-mod-backgroundcolor="1" data-mod-textcolor="1" data-mod-fontfamily="1" data-mod-fontsize="1">Data
+        Security</button>
+      <img src="assets/Online-world-rafiki.png" data-canonical-image-url="assets/Online-world-rafiki.png"
+        data-image-type="file" data-object-fit="contain" id="image20"
+        style="height: 185px; width: 180px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 65px; top: 67px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <button id="buttonL2"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 18px; position: absolute; left: 55px; top: 317px; width: 200px;"
+        data-mod-backgroundcolor="1" data-mod-textcolor="1" data-mod-fontfamily="1" data-mod-fontsize="1">Data
+        Privacy</button>
+      <button id="buttonL3"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 40px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 18px; position: absolute; left: 55px; top: 380px; width: 200px;"
+        data-mod-backgroundcolor="1" data-mod-textcolor="1" data-mod-fontfamily="1" data-mod-fontsize="1">Facebook
+        Quizzes</button>
+    </div>
+    <div class="screen" tabindex="1" data-theme="default" id="screenInfo"
+      style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 204, 0);">
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(37, 59, 89); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; padding: 2px 15px; width: 315px; height: 150px; position: absolute; left: 0px; top: 205px; text-align: center; font-size: 13px;"
+        id="label35">Welcome to our Harry Potter quiz! This app was made by Hogwarts Analytica - a team of young
+        developers, participating in &nbsp;the International Youth Hackathon 2020, organised as a part of Data CTRL
+        Centre project. Without revealing too much, we offer you to take this &nbsp;short quiz in order to get to know
+        you a bit better! Afterwards, you will find out what it is all about. ;)</label>
+      <button id="buttonI1"
+        style="padding: 0px; margin: 0px; border-style: solid; height: 30px; background-color: rgb(30, 54, 92); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Lucida Console&quot;, Monaco, monospace; font-size: 18px; position: absolute; left: 110px; top: 407px; width: 100px;">Back</button>
+      <img src="assets/Hogwarts.png" data-canonical-image-url="assets/Hogwarts.png" data-image-type="file"
+        data-object-fit="contain" id="image21"
+        style="height: 205px; width: 320px; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; position: absolute; left: 0px; top: 0px; margin: 0px; object-fit: contain; font-family: &quot;object-fit: contain;&quot;;">
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(37, 59, 89); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; padding: 2px 15px; width: 300px; height: 30px; position: absolute; left: -10px; top: 334px; text-align: left; font-size: 12px;"
+        id="label36">Developers: Anastasiia Korzhylova, Danila Zhuravlev, David Sahakyan</label>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(37, 59, 89); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; padding: 2px 15px; width: 275px; height: 35px; position: absolute; left: -11px; top: 360px; text-align: left; font-size: 12px;"
+        id="label37">Mentors: Martin Fischer, Anastasia Tumanova</label>
+      <label
+        style="margin: 0px; line-height: 1; overflow: hidden; overflow-wrap: break-word; max-width: 320px; border-style: solid; text-rendering: optimizespeed; color: rgb(37, 59, 89); background-color: rgba(0, 0, 0, 0); border-color: rgb(77, 87, 95); border-radius: 0px; border-width: 0px; font-family: &quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif; padding: 2px 15px; width: 280px; height: 20px; position: absolute; left: -10px; top: 374px; text-align: left; font-size: 12px;"
+        id="label38">Images: Freepik</label>
+      <label id="hasPosts" style="display: none;"></label>
+      <label id="validAccount" style="display: none;"></label>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="code.js"></script>
+</body>
+
+</html>
