@@ -21,7 +21,7 @@ function instagramSearch(username) {
     username = username.replace("@", "")
     username = username.replace("?", "")
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", `https://www.instagram.com/${username}/?__a=1`);
+    xhr.open("GET", `https://cors-anywhere.herokuapp.com/www.instagram.com/${username}/?__a=1`);
     xhr.send();
     xhr.onload = function () {
         if (xhr.status != 200) {
